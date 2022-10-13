@@ -93,7 +93,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* Main page */
@@ -290,8 +290,6 @@ body {
   padding-right: 30px;
 }
 
-.list-flex .item:not(:first-child)
-
 /* Team */
 
 .team-name {
@@ -305,9 +303,14 @@ body {
 }
 
 .team-pos {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+}
+
+.pos {
+  padding-bottom: 30px;
 }
 
 .team-bg {
@@ -366,6 +369,16 @@ body {
 
 .footer-bg {
   background-color: var(--back-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+.footer-item .item + .item {
+  padding-top: 9px;
 }
 
 /* Portfolio page */
