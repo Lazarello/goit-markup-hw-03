@@ -150,7 +150,7 @@ body {
   cursor: pointer;
 }
 
-.header-link.current {
+.current {
   color: var(--btn-color);
 }
 
@@ -166,8 +166,8 @@ body {
 
 .header-contact {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -206,6 +206,7 @@ body {
 }
 
 .hero-background {
+  text-align: center;
   background-color: var(--back-color);
 }
 
@@ -223,19 +224,18 @@ body {
 }
 
 .hero-button {
-  width: 216px;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   border-radius: 4px;
   background: #2196f3;
-  box-shadow: 0px;
   border-style: hidden;
-  display: block;
-  margin: 0 auto;
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--white-color);
   cursor: pointer;
@@ -255,7 +255,7 @@ body {
 }
 
 .features-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -282,12 +282,21 @@ body {
   color: var(--name-color);
 }
 
-.list-flex {
+.list-features {
+  display: flex;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.list-features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.wwd-flex {
   display: flex;
 }
 
-.list-flex .item:not(:last-child) {
-  padding-right: 30px;
+.wwd-flex .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .list-flex .member:not(:last-child) {
@@ -297,8 +306,6 @@ body {
 /* Team */
 
 .team-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -313,17 +320,21 @@ body {
   letter-spacing: 0.03em;
 }
 
-.pos {
-  padding-bottom: 30px;
-}
-
 .team-bg {
   padding-bottom: 94px;
   background-color: var(--team-bg);
 }
 
+.team-bg {
+  background-color: var(--team-bg);
+}
+
 .employee-bg li {
   background-color: var(--white-color);
+}
+
+.list-flex {
+  display: flex;
 }
 
 .list-flex .member {
@@ -338,9 +349,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.member .photo {
-  margin-bottom: 30px;
-}
 .member .team-name {
   margin-bottom: 9px;
 }
@@ -390,7 +398,7 @@ body {
 }
 
 .footer-item .item + .item {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 /* Portfolio page */
@@ -409,7 +417,6 @@ body {
   max-width: 130px;
   border-style: hidden;
   border-radius: 4px;
-  height: 38px;
 
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -428,7 +435,6 @@ body {
 }
 
 .portfolio-name {
-  margin-top: 20px;
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -446,13 +452,13 @@ body {
 }
 
 .filter-flex {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
 
 .filter-flex .item + .item {
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 .portfolio-flex {
@@ -465,10 +471,14 @@ body {
   border: 1px solid #eeeeee;
   padding-left: 24px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 24px;
 }
 
 .team-card {
   background: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
