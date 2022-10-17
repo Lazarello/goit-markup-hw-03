@@ -43,6 +43,11 @@ ol {
   padding-left: 0;
 }
 
+a:visited {
+  text-decoration: none;
+  decoration: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -120,20 +125,20 @@ body {
   color: var(--btn-color);
 }
 
-/* .header-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+.header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--name-color);
-} */
+}
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.site-nav a:visited {
+  text-decoration: none;
 }
 
 .site-nav .item:not(:last-child) {
@@ -194,10 +199,6 @@ body {
   align-items: center;
 }
 
-.as {
-  justify-content: ;
-}
-
 /* Hero */
 
 .hero {
@@ -251,6 +252,10 @@ body {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-wwd {
   padding-bottom: 94px;
 }
 
@@ -394,7 +399,7 @@ body {
 .footer-logo {
   display: inline-block;
   margin-right: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-item .item + .item {
