@@ -206,8 +206,21 @@ body {
 }
 
 .hero-background {
+  margin: 0 auto;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
   background-color: var(--back-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -298,6 +311,22 @@ body {
 .list-features .item:not(:last-child) {
   margin-right: 30px;
 }
+
+.features-icon::before {
+  display: block;
+  content: "";
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
+  background-size: 70px 70px;
+  background-position: center;
+  background-color: var(--team-bg);
+  margin-bottom: 30px;
+  background-image: url(../images/antena.svg);
+  background-repeat: no-repeat;
+}
+
+/* What we do */
 
 .wwd-flex {
   display: flex;
